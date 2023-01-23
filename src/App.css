@@ -1,31 +1,230 @@
-.App {
-  text-align: center;
+.body {
+  background-color: #111214;
+  font-family: monospace;
+  font-size: 16.5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 97%;
+  background-color: #111214;
+  color: white;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  font-family: monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  color: orange;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.fotomia{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.aboutMe{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.aboutMe2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+  width: 690px;
+
+}
+
+.aboutMe2-2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+  width: 690px;
+  margin-top: 50px;
+
+}
+
+.aboutMe2-3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 290px;
+  width: 690px;
+  margin-top:50px;
+
+}
+
+.aboutMe2-4{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
+  width: 690px;
+
+}
+
+.aboutMe2-5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 750px;
+
+}
+
+.textAboutMe2{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.textAboutMe2-1{
+  color: rgb(223, 155, 30);
 }
 
-.heart {
-  color: #ff0000;
+.textAboutMe2-1-2{
+  color: rgb(223, 155, 30);
+  margin-bottom: 40px;
 }
 
-.small {
-  font-size: 0.75rem;
+.habilidades{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.habilidadesLogos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.habilidades2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificateImg{
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+}
+
+.logoBox{
+  width: 200px;
+  height: 300px;
+  }
+
+.logoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  border-color: #FF8303;
+  
+  width: 113.46px;
+  height: 181.27px;
+  left: 43px;
+  top: 61px;
+  
+  border-radius: 10px;
+}
+
+.logoHTML{
+  width: 113.46px;
+  height: 140px;
+  
+  
+  /* Inside auto layout */
+  
+  order: 0;
+  flex-grow: 0;
+  border-color: #FF8303;
+  }
+.logoHTML:hover{
+  animation: ruberband 1s;
+}
+@keyframes ruberband{
+  0%{
+      transform: scale3d(1,1,1);
+  }
+  35%{
+      transform: scale3d(1.25, .75, 1);
+  }
+  45%{
+      transform: scale3d(.75, 1, 1);
+  }
+  60%{
+      transform: scale3d(1.2, .8, 1);
+  }
+  75%{
+      transform: scale3d(1.05, .95, 1);
+  }
+  100%{
+      transform: scale3d(1,1,1);
+  }
+}
+
+.logoImg{
+  width: 113px;height: 120px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputContact{
+  height: 30px;
+  width: 250px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.contactButton{
+  height: 30px;
+  width: 100px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: rgb(223, 155, 30);
+  color: #111214;
+  border-radius: 5px;
+  font-family: monospace;
+  border-width: 0px;
+}
+
+.gridTrabajos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+
+}
+
+.cardTrabajos{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 270px;
+  background-color: #FF8303;
+  border-radius: 7px;
+  color: white;
+}
+
+.cardImg{
+  width: 200px;
+  height: 150px;
+  border-radius: 7px;
 }
